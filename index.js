@@ -74,11 +74,9 @@ app.get('/', (req, res) => {
 app.post('/upload', upload.single('file'), (req, res) => {
     
 
-    // window.location.reload();
+    // res.redirect('http://localhost:3000');
 
-    res.redirect('http://localhost:3000');
-
-    // res.json({file: req.file});
+    res.json({file: req.file});
     // res.send('successful');
 
 
